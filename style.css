@@ -1,4 +1,4 @@
-:root{
+:root {
     --azul-dnc: #0C70F2;
     --preto-dnc: #303030;
     --cinza-hover: #C9C9C9;
@@ -7,12 +7,13 @@
 
 
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 19.91%, rgba(12, 112, 242, 0.00) 24.84%), #303030;
 }
-#principal{
+
+#principal {
     width: 100%;
     height: 50px;
     background: var(--preto-dnc);
@@ -20,26 +21,30 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #BABABA;
-    
+
 }
-#principal div a{
+
+#principal div a {
     color: #FFF;
-     font-family: var(--font-padrao); 
+    font-family: var(--font-padrao);
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
 }
-#principal div a:hover{
+
+#principal div a:hover {
     color: var(--cinza-hover);
 }
-#menu{
+
+#menu {
     display: flex;
     width: 45%;
     justify-content: space-around;
     align-items: center;
-    margin-left: 5% ;
+    margin-left: 5%;
 }
-#principal button{
+
+#principal button {
     margin-right: 3%;
     background: var(--azul-dnc);
     box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
@@ -58,7 +63,7 @@ body{
 
 /*Seção Principal do site */
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,24 +71,28 @@ section{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-header{
+
+header {
     color: white;
     font-family: var(--font-padrao);
 }
-header h1{
+
+header h1 {
     font-size: 80px;
-    font-weight: 800 ;
+    font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
     text-align: center;
 }
-header h2{
+
+header h2 {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 100px;
 }
-header .invert{
+
+header .invert {
     background-color: black;
     font-weight: bold;
     padding: 5px;
@@ -92,45 +101,53 @@ header .invert{
 
 /*formulario*/
 
-form{
+form {
     color: white;
     font-family: var(--font-padrao);
     font-size: 30px;
     font-weight: 600;
     width: 600px;
 }
-.form-group{
+
+.form-group {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-form input{
+
+form input {
     border-radius: 10px;
     height: 30px;
     border: 0px;
     font-size: 20px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.9) ;
+    background-color: rgba(255, 255, 255, 0.9);
 }
-form label{
-    margin: 10px 0px 10px 0px ;
+
+form label {
+    margin: 10px 0px 10px 0px;
 }
-form input::placeholder{
-    color: rgba(57, 57, 57, 0.5) ;
+
+form input::placeholder {
+    color: rgba(57, 57, 57, 0.5);
 }
-.checkbox label{
+
+.checkbox label {
     font-size: 25px;
 }
-.checkbox{
+
+.checkbox {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     transform: scale(1.5)
 }
-input[type="submit"]{
+
+input[type="submit"] {
     background-color: var(--azul-dnc);
     box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
     width: 100%;
@@ -139,6 +156,150 @@ input[type="submit"]{
     font-family: var(--font-padrao);
     font-size: 20px;
     font-weight: 600;
-    margin-top: 100px; 
+    margin-top: 100px;
     cursor: pointer;
+}
+
+/* footer*/
+
+footer {
+    width: 100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer h5 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    border-radius: 10px;
+    background: #303030;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+footer ul li {
+    text-align: center;
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--cinza-hover);
+}
+
+footer .endereco {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    width: 16%;
+}
+
+footer .linha2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+footer .linha2 a {
+    font-family: var(--font-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+}
+
+footer .linha2 a:hover {
+    color: var(--cinza-hover);
+}
+
+footer .linha2 a:first-child {
+    border-right: 3px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    /* MENU */
+
+    #principal {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu a {
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    #principal button {
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* SECTION */
+
+    section h1 {
+        font-size: 35px;
+    }
+
+    section h2 {
+        font-size: 28px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* FORM */
+
+    form {
+        width: 90%;
+        font-size: 20px;
+    }
+   
+    .checkbox label{
+        font-size: 17px;
+    }
 }
